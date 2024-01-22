@@ -1,0 +1,29 @@
+using System;
+					
+public class InitialIdeas
+{
+	public Weapon miniGun;
+	
+	public void Main()
+	{
+		miniGun = new Weapon();
+		miniGun.weaponAmmo = 30;
+		miniGun.weaponDmg = 1.5f;
+		miniGun.weaponName = "Minigun";
+		
+		PrintStuff(25);
+	}
+	
+	public void PrintStuff(int currentAmmo)
+	{
+		miniGun.weaponAmmo = currentAmmo;
+		Console.WriteLine(miniGun.weaponAmmo);
+	}
+}
+
+public class Weapon
+{
+	public int weaponAmmo;
+	public string weaponName;
+	public float weaponDmg;
+}
