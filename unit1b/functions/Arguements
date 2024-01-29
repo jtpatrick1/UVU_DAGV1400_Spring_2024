@@ -1,0 +1,22 @@
+using System;
+
+public class Program
+{
+	public int NumberB;
+	public void Main()
+	{
+		Console.WriteLine("Hello World");
+		RunFunctions();
+	}
+	
+	public void RunFunctions()
+	{
+		Arguements(8);
+	}
+	
+	public void Arguements(int Number)
+	{
+		NumberB = Number + 3;
+		Console.WriteLine(NumberB);
+	}
+}
