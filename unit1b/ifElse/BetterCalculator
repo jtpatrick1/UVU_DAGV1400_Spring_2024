@@ -1,0 +1,44 @@
+using System;
+
+public class Program
+{
+	public Calculator RunCalculator;
+	public void Main()
+	{
+		RunCalculator = new Calculator();
+		RunFunctions();
+	}
+	
+	public void RunFunctions()
+	{
+		RunCalculator.Maths(8, "/", 4);
+	}
+}
+
+public class Calculator
+{
+	public float Result;
+	public void Maths(float Number1, string Operator, float Number2)
+	{
+		if (Operator == "+")
+		{
+			Result = Number1 + Number2;
+		}
+		
+		if (Operator == "/")
+		{
+			Result = Number1 / Number2;
+		}
+		
+		if (Operator == "x")
+		{
+			Result = Number1 * Number2;
+		}
+		
+		if (Operator == "-")
+		{
+			Result = Number1 - Number2;
+		}
+		Console.WriteLine(Number1 + " " + Operator + " " + Number2 + " = " + Result);
+	}
+}
