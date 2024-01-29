@@ -1,0 +1,22 @@
+using System;
+
+public class WeatherChecker
+{
+	public string UserWeather;
+	public int Temperature;
+	public void Main()
+	{
+		Console.WriteLine("What is the temperature?");
+		UserWeather = Console.ReadLine();
+		Temperature = int.Parse(UserWeather);
+		if (Temperature > 30)
+		{
+			Console.WriteLine("Stay out of the sun!");
+		} 
+		
+		else 
+		{
+			Console.WriteLine("Have a pleasent day!");
+		}
+	}
+}
