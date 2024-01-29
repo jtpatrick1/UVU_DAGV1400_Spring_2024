@@ -1,0 +1,39 @@
+using System;
+
+public class Program
+{
+	public int Result;
+	public void Main()
+	{
+		RunFunctions();
+	}
+	
+	public void RunFunctions()
+	{
+		Calculator(8, "x", 4);
+	}
+	
+	public void Calculator(int Number1, string Operator, int Number2)
+	{
+		if (Operator == "+")
+		{
+			Result = Number1 + Number2;
+		}
+		
+		if (Operator == "/")
+		{
+			Result = Number1 / Number2;
+		}
+		
+		if (Operator == "x")
+		{
+			Result = Number1 * Number2;
+		}
+		
+		if (Operator == "-")
+		{
+			Result = Number1 - Number2;
+		}
+		Console.WriteLine(Number1 + " " + Operator + " " + Number2 + " = " + Result);
+	}
+}
