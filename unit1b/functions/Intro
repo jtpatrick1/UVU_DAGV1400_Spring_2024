@@ -1,0 +1,29 @@
+using System;
+
+public class Program
+{
+	public int NumberA;
+	public void Main()
+	{
+		Console.WriteLine("Hello World");
+		RunFunctions();
+	}
+	
+	public void RunFunctions()
+	{
+		Other();
+		Subtraction();
+	}
+	
+	public void Other()
+	{
+		Console.WriteLine("This is working!");
+	}
+	
+	public void Subtraction()
+	{
+		NumberA = 12;
+		NumberA -= 10;
+		Console.WriteLine(NumberA);
+	}
+}
