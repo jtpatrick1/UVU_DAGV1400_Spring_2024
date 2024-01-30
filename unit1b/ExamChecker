@@ -1,0 +1,38 @@
+using System;
+					
+public class ExamChecker
+{
+	
+	public string UserScore;
+	public int Score;
+	
+	public void Main()
+	{
+		Console.WriteLine("What is you're grade?");
+		UserScore = Console.ReadLine();
+		Score = int.Parse(UserScore);
+		
+		
+		
+		if (90 < Score)
+		{
+			Console.WriteLine("You got an A!");
+		} 
+		else if (80 < Score)
+		{
+			Console.WriteLine ("You got a B!");
+		}
+		else if (70 < Score)
+		{
+			Console.WriteLine ("You got a C.");
+		}
+		else if (60 < Score)
+		{
+			Console.WriteLine ("You got a D");
+		}
+		else
+		{
+			Console.WriteLine("You failed."); 
+		}
+	}
+}
